@@ -73,7 +73,7 @@ section
 }
 
 .section.section-secounday {
-    width: 100vw;
+    width: 100%;
     background-color: #eee;
 
 }
@@ -186,7 +186,8 @@ hero
     position: absolute;
     z-index: 1;
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: fill;
 }
 
 .hero-particles {
@@ -223,6 +224,7 @@ about
 /* .about-description {} */
 @media screen and (max-width: 768px) {
     .about {
+        text-align: center;
         display: block;
     }
 
@@ -433,6 +435,7 @@ form
 News
 */
 .news-data {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -462,10 +465,10 @@ News
         padding: 5px;
     }
 
-.news-description {
-    min-width: 90%;
-    border-bottom: solid 1px #c8c8c8;
-    padding: 5px;
+    .news-description {
+        min-width: 90%;
+        border-bottom: solid 1px #c8c8c8;
+        padding: 5px;
     }
 }
 
@@ -473,7 +476,7 @@ News
 works
 */
 .works {
-    width: 100vw;
+    width: 100%;
     margin: 0;
     padding: 20px;
     background-color: #eee;
@@ -500,7 +503,7 @@ works
 footer
 */
 .footer {
-    width: 100vw;
+    width: 100%;
     background-color: #333;
     color: #fff;
 }
