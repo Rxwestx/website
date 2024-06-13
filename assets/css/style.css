@@ -74,10 +74,9 @@ section
 
 .section.section-secounday {
     position: relative;
-    width: 100%;
+    width: 100vw;
     text-align: center;
     background-color: #eee;
-
 }
 
 .section-headline {
@@ -187,10 +186,13 @@ hero
 .hero>video {
     position: absolute;
     z-index: 1;
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 100%;
+    min-height: 100%;
 }
+
 
 .hero-particles {
     position: absolute;
@@ -353,6 +355,7 @@ button
 .button:hover {
     box-shadow: 0 0 0 #bbb;
 }
+
 /* vervion違いを用意 */
 .button.button-submission {
     background: #92d3ca;
@@ -387,7 +390,7 @@ button
     min-height: 100px;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
 
     .select,
     .input,
@@ -420,7 +423,7 @@ form
     text-align: center;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
 
     .form-table,
     .form-table tbody,
@@ -435,7 +438,6 @@ form
 News
 */
 .news-data {
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -476,7 +478,7 @@ News
 works
 */
 .works {
-    width: 100%;
+    width: 100vw;
     margin: 0;
     padding: 20px;
     background-color: #eee;
@@ -503,7 +505,7 @@ works
 footer
 */
 .footer {
-    width: 100%;
+    width: 100vw;
     background-color: #333;
     color: #fff;
 }
